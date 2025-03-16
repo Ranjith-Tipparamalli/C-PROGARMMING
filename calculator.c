@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    double a, b, c;
-    char oper;
+    double a, b, c;  //for representing integers...
+    char oper;       //for representing operations...
     printf("enter 2 numbers: ");
     scanf("%lf %lf", &a, &b);
     printf("select a operation(+,-,*,/): ");
     scanf(" %c", &oper);
-    switch (oper)
+    switch (oper)    //using "SWITCH" for efficiency...
     {
     case '+':
         c = a + b;
@@ -24,7 +24,7 @@ int main()
         else
         {
             printf("Division by zero is not allowed.");
-            return 1;
+            return 1;    //immidetely stops the execution...
         }
         break;
     default:
@@ -32,5 +32,5 @@ int main()
         return 1;
     }
     printf("Therefore, result => %.2lf %c %.2lf = %.2lf\n",a, oper, b, c);
-    return 0;
+    return 0;    //end of the program...
 }

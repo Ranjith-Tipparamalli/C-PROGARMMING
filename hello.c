@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+// starting...
+int main()
+
+{
+    printf("hello,world!.."); // printig the message...
+    return 0;                 // end of the program...
+}
